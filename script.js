@@ -28,10 +28,12 @@ document.querySelector(".get-button").onclick = function () {
       repos.forEach((repo) => {
         showData.innerHTML += `
           <div class="repo-box">
-            <div class="repo-name">${repo.name}</div>
-            <div class="repo-actions">
-              <a href="${repo.html_url}" target="_blank">Visit</a>
-              <span>⭐ ${repo.stargazers_count}</span>
+            <div class="repo-content">
+              <div class="repo-name">${repo.name}</div>
+              <div class="repo-actions">
+                <a href="${repo.html_url}" target="_blank">Visit</a>
+                <span>⭐ ${repo.stargazers_count}</span>
+              </div>
             </div>
           </div>
         `;
